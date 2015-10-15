@@ -159,7 +159,7 @@
                                 </constraints>
                                 <state key="normal" title="Back"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
@@ -289,6 +289,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kAl-ps-eUF"/>
+        <segue reference="fU5-m4-bJL"/>
     </inferredMetricsTieBreakers>
 </document>
