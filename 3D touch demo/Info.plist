@@ -25,8 +25,18 @@
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
-			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutIconTypeHome</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>lightning</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Incredible value.</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Jaunts</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.inspirato.3D-touch-demo.jaunts</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Check out what&apos;s new.</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>New Properties</string>
 			<key>UIApplicationShortcutItemType</key>
@@ -34,7 +44,7 @@
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutIconTypeMessage</string>
+			<string>UIApplicationShortcutIconTypeCompose</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Email your PVA</string>
 			<key>UIApplicationShortcutItemType</key>

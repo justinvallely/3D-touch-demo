@@ -1,22 +1,22 @@
 //
-//  peekViewController.swift
+//  jauntViewController.swift
 //  3D touch demo
 //
-//  Created by Justin Vallely on 10/7/15.
+//  Created by Justin Vallely on 10/14/15.
 //  Copyright © 2015 Justin Vallely. All rights reserved.
 //
 
 import UIKit
 
-public class peekViewController: UIViewController {
+class jauntViewController: UIViewController {
 
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override public func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

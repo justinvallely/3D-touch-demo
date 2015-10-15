@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -43,14 +44,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
 
+        switch shortcutItem.type {
+        case "com.inspirato.3D-touch-demo.jaunts":
+            print("Shortcut item tapped: jaunt")
+            // go to jaunt view controller
 
-        print("Shortcut item tapped")
+            launchViewController1("jauntViewController")
 
-        if (shortcutItem.type == "com.inspirato.3D-touch-demo.newproperties") {
 
-            // go to new user view controller
+        case "com.inspirato.3D-touch-demo.newproperties":
+            print("Shortcut item tapped: newproperties")
+            // go to new properties view controller
 
+            launchViewController1("npaViewController")
+
+        case "com.inspirato.3D-touch-demo.newmessage":
+            print("Shortcut item tapped: newmessage")
+            // go to compose message view controller
+
+            launchViewController1("emailViewController")
+
+        default:
+            print("default case")
         }
+    }
+
+    func launchViewController1(name: String) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller: UIViewController = storyboard.instantiateViewControllerWithIdentifier(name)
+        self.window!.rootViewController = controller
+        self.window!.makeKeyAndVisible()
     }
 
 

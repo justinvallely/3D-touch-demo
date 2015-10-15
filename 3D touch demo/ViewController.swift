@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIViewControllerPreviewingDelegate {
+
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +23,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-}
+    override func viewWillAppear(animated: Bool) {
+        check3DTouch()
+    }
 
-extension ViewController: UIViewControllerPreviewingDelegate {
+    func check3DTouch() {
+        if traitCollection.forceTouchCapability == UIForceTouchCapability.Available {
+            registerForPreviewingWithDelegate(self, sourceView: self.view)
+            print("3D Touch is available!")
+        }
+    }
 
     func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
 
-        let peekViewController = storyboard?.instantiateViewControllerWithIdentifier("peekViewController")
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let peekViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier("peekViewController")
 
         return peekViewController
 
@@ -34,9 +45,10 @@ extension ViewController: UIViewControllerPreviewingDelegate {
 
     func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
 
-        let popViewController = storyboard?.instantiateViewControllerWithIdentifier("popViewController")
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let popViewController: UIViewController = storyboard.instantiateViewControllerWithIdentifier("popViewController")
 
-        showViewController(popViewController!, sender: self)
+        showViewController(popViewController, sender: self)
     }
 
 }

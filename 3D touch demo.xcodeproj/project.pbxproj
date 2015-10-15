@@ -16,6 +16,9 @@
 		94922F771BC56A2400C6282F /* _D_touch_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94922F761BC56A2400C6282F /* _D_touch_demoUITests.swift */; };
 		94922F851BC573F000C6282F /* peekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94922F841BC573F000C6282F /* peekViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		94922F871BC5740400C6282F /* popViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94922F861BC5740400C6282F /* popViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EB08FBCD1BCF663E00DFDA13 /* jauntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08FBCC1BCF663E00DFDA13 /* jauntViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EB08FBCF1BCF665A00DFDA13 /* npaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08FBCE1BCF665A00DFDA13 /* npaViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EB08FBD11BCF666700DFDA13 /* emailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08FBD01BCF666700DFDA13 /* emailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		94922F781BC56A2400C6282F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94922F841BC573F000C6282F /* peekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = peekViewController.swift; sourceTree = "<group>"; };
 		94922F861BC5740400C6282F /* popViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popViewController.swift; sourceTree = "<group>"; };
+		EB08FBCC1BCF663E00DFDA13 /* jauntViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jauntViewController.swift; sourceTree = "<group>"; };
+		EB08FBCE1BCF665A00DFDA13 /* npaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = npaViewController.swift; sourceTree = "<group>"; };
+		EB08FBD01BCF666700DFDA13 /* emailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = emailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				94922F561BC56A2400C6282F /* AppDelegate.swift */,
 				94922F581BC56A2400C6282F /* ViewController.swift */,
 				94922F841BC573F000C6282F /* peekViewController.swift */,
+				EB08FBCC1BCF663E00DFDA13 /* jauntViewController.swift */,
+				EB08FBCE1BCF665A00DFDA13 /* npaViewController.swift */,
+				EB08FBD01BCF666700DFDA13 /* emailViewController.swift */,
 				94922F861BC5740400C6282F /* popViewController.swift */,
 				94922F5A1BC56A2400C6282F /* Main.storyboard */,
 				94922F5D1BC56A2400C6282F /* Assets.xcassets */,
@@ -198,6 +207,7 @@
 				TargetAttributes = {
 					94922F521BC56A2400C6282F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = FSL9555597;
 					};
 					94922F661BC56A2400C6282F = {
 						CreatedOnToolsVersion = 7.0;
@@ -261,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB08FBCD1BCF663E00DFDA13 /* jauntViewController.swift in Sources */,
 				94922F871BC5740400C6282F /* popViewController.swift in Sources */,
+				EB08FBCF1BCF665A00DFDA13 /* npaViewController.swift in Sources */,
 				94922F591BC56A2400C6282F /* ViewController.swift in Sources */,
 				94922F851BC573F000C6282F /* peekViewController.swift in Sources */,
+				EB08FBD11BCF666700DFDA13 /* emailViewController.swift in Sources */,
 				94922F571BC56A2400C6282F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "3D touch demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.inspirato.-D-touch-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -417,10 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "3D touch demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.inspirato.-D-touch-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -491,6 +510,7 @@
 				94922F7D1BC56A2400C6282F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94922F7E1BC56A2400C6282F /* Build configuration list for PBXNativeTarget "3D touch demoTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +519,7 @@
 				94922F801BC56A2400C6282F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94922F811BC56A2400C6282F /* Build configuration list for PBXNativeTarget "3D touch demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +528,7 @@
 				94922F831BC56A2400C6282F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

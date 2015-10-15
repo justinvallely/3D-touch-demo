@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F57340B3-5E74-4A4C-8472-0CEE9B780317</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BACB3315815EDE23AE4684F70D7531E15043074F</key>
+		<string>https://github.com/justinvallely/3D-touch-demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>3D touch demo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BACB3315815EDE23AE4684F70D7531E15043074F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/justinvallely/3D-touch-demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BACB3315815EDE23AE4684F70D7531E15043074F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BACB3315815EDE23AE4684F70D7531E15043074F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>3D-touch-demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
