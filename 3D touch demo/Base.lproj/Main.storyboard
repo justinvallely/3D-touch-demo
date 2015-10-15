@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main storyboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F8-SC-YMK">
-                                <rect key="frame" x="182" y="282" width="237" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press here to peek/pop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F8-SC-YMK">
+                                <rect key="frame" x="124" y="282" width="352" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="BsX-UR-pXu"/>
-                                    <constraint firstAttribute="width" constant="237" id="mrU-qV-MxA"/>
+                                    <constraint firstAttribute="width" constant="352" id="iPQ-Cr-mGK"/>
+                                    <constraint firstAttribute="height" constant="37" id="v58-3n-bFk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
